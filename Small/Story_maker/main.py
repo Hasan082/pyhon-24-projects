@@ -23,5 +23,5 @@ And so, {noun2} and the {noun1} went off to {verb2} and had a great time.
 The end.
 """
 
-
+print(story)
 
