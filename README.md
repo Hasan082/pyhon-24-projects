@@ -1,2 +1,2 @@
-# pyhon-30-projects
-Pyhon 30 projects Including telegram and discord bot
+# 30 Python Projects to Build, Including Telegram & Discord Bots
+
