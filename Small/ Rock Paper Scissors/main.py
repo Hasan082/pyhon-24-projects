@@ -27,8 +27,8 @@ class RPSGame:
 
     def display_moves(self, user_move: str, ai_move: str):
         print("----------")
-        print(f"You chose {self.moves[user_move]}")
-        print(f"AI chose {self.moves[ai_move]}")
+        print(f"You chose:-> {self.moves[user_move]}")
+        print(f"AI chose:-> {self.moves[ai_move]}")
         print("----------")
 
     def check_move(self, user_move: str, ai_move: str):
