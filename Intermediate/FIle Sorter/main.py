@@ -1,5 +1,3 @@
-# https://gale.udemy.com/course/great-python-projects/learn/lecture/39178218#overview
-
 import os
 import shutil
 
