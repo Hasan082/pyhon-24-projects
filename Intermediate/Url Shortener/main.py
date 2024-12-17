@@ -10,14 +10,17 @@ def shorten_url(full_url: str) -> None:
         'key': API_KEY,
         'short': full_url,
     }
-    response = requests.post(BASE_URL, params=payload)
-    data: dict = response.json()
+    try:
+        response = requests.post(BASE_URL, params=payload)
+        data: dict = response.json()
+    except Exception as e:
+        print(f'Error: {e}')
 
     if url_data := data.get('url'):
         if url_data['status'] == 7:
             print(f"Shortened URL: {url_data['shortLink']}")
         else:
-            print("Error shortening URL")
+            print("Error shortening URL" + url_data['status'])
 
 
 def main() -> None:
