@@ -19,9 +19,9 @@ def save_csv(list_of_emails: set, filename: str = 'emails.csv') -> None:
 
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(['Email'])
-        for email in list_of_emails:
-            writer.writerow([email])
+        writer.writerow(['Serial No.', 'Email'])
+        for idx, email in enumerate(list_of_emails, start=1):
+            writer.writerow([idx, email])
 
 
 class Browser:
