@@ -1,6 +1,5 @@
 import itertools
 import string
-import sys
 import time
 
 
