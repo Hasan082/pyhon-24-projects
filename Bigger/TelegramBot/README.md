@@ -26,9 +26,12 @@ This is a basic Telegram chatbot created for learning purposes. It can perform s
    pip install telegram
    # (Optional: Add installation commands for other libraries)
 
-* Replace YOUR_BOT_TOKEN in main.py with your actual Telegram Bot API token.
-* Usage:
 
+3. Replace YOUR_BOT_TOKEN in main.py with your actual Telegram Bot API token.
+
+**Requirements:**
+
+* Usage:
 * Run the bot:
 Bash
 
