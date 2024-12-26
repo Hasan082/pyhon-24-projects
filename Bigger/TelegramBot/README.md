@@ -31,7 +31,7 @@ This is a basic Telegram chatbot created for learning purposes. It can perform s
 
 **Requirements:**
 
-* Usage:
+#### Usage:
 * Run the bot:
 Bash
 
