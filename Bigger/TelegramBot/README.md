@@ -1,4 +1,4 @@
-# Simple Telegram Chatbot
+# A Telegram Chatbot
 
 **Description:**
 
