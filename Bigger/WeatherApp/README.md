@@ -8,7 +8,7 @@ API and presents it in a readable way, displaying the temperature and weather co
 
 ```
 WeatherApp/
-├── api.py                # Handles API requests to fetch weather data.
+├── api.py                # Hold the API Key and Base Url.
 ├── main.py               # Main script for running the application and displaying weather information.
 ├── model.py              # Contains the Weather class and model definitions.
 ├── weather.json          # Example of a dummy weather data file for local testing.
