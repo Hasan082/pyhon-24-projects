@@ -12,7 +12,9 @@ WeatherApp/
 ├── main.py               # Main script for running the application and displaying weather information.
 ├── model.py              # Contains the Weather class and model definitions.
 ├── weather.json          # Example of a dummy weather data file for local testing.
-└── weather_api.py        # Functions to interact with the weather API and retrieve data.
+|── weather_api.py        # Functions to interact with the weather API and retrieve data.
+└── requiremnts.txt        # Functions to interact with the weather API and retrieve data.
+
 ```
 
 ## Requirements
