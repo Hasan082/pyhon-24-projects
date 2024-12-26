@@ -88,6 +88,9 @@ def handle_response(text: str):
     if 'bye' in processed:
         return f"Bye"
 
+    if 'what is your name' in processed:
+        return f"I am Lusiana, A chat boot, Who can make your life easier!"
+
     return "Your question is out of my memory!"
 
 
