@@ -13,6 +13,7 @@ def get_weather(city: str, mock: bool = True) -> dict:
     response = requests.get(BASE_URL, params=payload)
     data: dict = response.json()
 
+
     # FOR SAVING MOCK DATA
     # with open('weather.json', 'w') as f:
     #     json.dump(data, f)
