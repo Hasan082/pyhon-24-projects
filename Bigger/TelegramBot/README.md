@@ -29,7 +29,6 @@ This is a basic Telegram chatbot created for learning purposes. It can perform s
 
 3. Replace YOUR_BOT_TOKEN in main.py with your actual Telegram Bot API token.
 
-**Requirements:**
 
 #### Usage:
 * Run the bot:
