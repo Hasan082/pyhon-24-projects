@@ -6,7 +6,6 @@ import os
 load_dotenv()
 
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-print(DISCORD_TOKEN)
 
 
 def run_bot(token: str):
@@ -29,7 +28,7 @@ def run_bot(token: str):
             response: str = responses.get_response(message.content, brain=brain)
             await message.channel.send(response)
         else:
-            print(f'could not find message: {message.content}')
+            print(f'Bot not mentioned in message: {message.content}')
 
     client.run(token=token)
 
