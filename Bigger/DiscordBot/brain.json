@@ -1,1 +1,13 @@
-!
+{
+  "hi": "Hello there!",
+  "how are you": "I'm just a bot, but I'm doing great! How about you?",
+  "what is your name": "I am your friendly Discord bot!",
+  "bye": "Goodbye! Have a great day!",
+  "help": "Sure! How can I assist you today?",
+  "thank you": "You're welcome!",
+  "who made you": "I was created by an awesome developer Name is Md hasan!",
+  "joke": "Why don't scientists trust atoms? Because they make up everything!",
+  "do you know what the time is?": "Not at all!",
+  "what time is it?": "No clue!",
+  "what can you do?": "I can answer questions!"
+}
