@@ -4,7 +4,14 @@ from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import time
-from cred import EMAIL, PASSWORD
+from dotenv import load_dotenv
+import os
+from typing import Final
+
+load_dotenv()
+
+EMAIL: Final[str] = os.getenv("EMAIL")
+PASSWORD: Final[str] = os.getenv("PASSWORD")
 
 
 def create_img_attachment(img: str) -> MIMEImage:
@@ -46,10 +53,10 @@ def send_email(to_email: str, subject: str, body: str, img: str) -> None:
 
 
 if __name__ == '__main__':
-    for i in range(1):
-        subject = f"I love you {i}"
+    for i in range(2):
+        subject = f"Hello Moon {i}"
         send_email(
-            to_email="mollikamukta87@gmail.com",
+            to_email="moon137866@gmail.com",
             subject=subject,
             body="Hello there, How are you?",
             img="cat.png"
