@@ -1,6 +1,12 @@
-from token_file import TOKEN, BOT_USERNAME
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, Updater
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
+BOT_USERNAME = os.getenv('BOT_USERNAME')
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -119,7 +125,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     print("Starting bot...")
-    app = Application.builder().token(TOKEN).build()
+    app = Application.builder().token(TELEGRAM_TOKEN).build()
 
     #Commands
     app.add_handler(CommandHandler("start", start_command))
