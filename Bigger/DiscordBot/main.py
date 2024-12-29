@@ -1,4 +1,4 @@
-from discord import Intents, Client, user
+from discord import Intents, Client
 from dotenv import load_dotenv
 import responses
 import os
