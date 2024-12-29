@@ -1,7 +1,15 @@
 import json
-from api import BASE_URL, API_KEY
+import os
+
+from dotenv import load_dotenv
 import requests
 from model import Weather, dt
+from typing import Final
+
+load_dotenv()
+
+API_KEY: Final[str] = os.getenv("API_KEY")
+BASE_URL: Final[str] = os.getenv("BASE_URL")
 
 
 def get_weather(city: str, mock: bool = True) -> dict:
@@ -12,7 +20,6 @@ def get_weather(city: str, mock: bool = True) -> dict:
     payload = {'q': city, 'appid': API_KEY, 'units': 'metric'}
     response = requests.get(BASE_URL, params=payload)
     data: dict = response.json()
-
 
     # FOR SAVING MOCK DATA
     # with open('weather.json', 'w') as f:

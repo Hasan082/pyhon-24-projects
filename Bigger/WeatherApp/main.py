@@ -4,9 +4,19 @@ import logging
 
 def main():
     while True:
-        weather_place = input('Enter city name or postal code: ')
+        weather_place = input('Enter city name: ')
+
+        if weather_place.isdigit():
+            print("Invalid city name, Please try again!")
+            continue
+
         try:
             current_weather: dict = get_weather(city=weather_place, mock=False)
+
+            if not current_weather or not isinstance(current_weather, dict):
+                print("Invalid response from the weather API. Please try again.")
+                continue
+
             status_code = current_weather.get('cod', 0)
             print(f"City form api:  {current_weather.get('city').get('name')}")
             print(f'Current weather status: {status_code}')
@@ -18,11 +28,12 @@ def main():
                 print("Unauthorized Access")
             else:
                 print(f'Something went wrong. Please try again')
-
-        except ValueError as error:
-            logging.error(error)
+        except ValueError as e:
+            print(f"Invalid city name, Please try again!")
+            logging.basicConfig(filename='app.log', level=logging.ERROR)
         except Exception as error:
-            logging.error(error)
+            print(f"Exception Invalid city name, Please try again!")
+            logging.basicConfig(filename='app.log', level=logging.ERROR)
 
     weather_details = get_weather_details(current_weather)
 

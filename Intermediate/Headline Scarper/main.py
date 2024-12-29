@@ -21,7 +21,7 @@ def get_headlines(soup: BeautifulSoup) -> list[str]:
         headline: str = h.get_text().lower()
         headlines.add(headline)
 
-    return sorted(headlines)
+    return list(headlines)
 
 
 def main():

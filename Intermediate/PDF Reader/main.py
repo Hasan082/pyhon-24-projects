@@ -22,8 +22,9 @@ def count_word(text_list: list[str]) -> Counter:
 
 
 def main():
-    extract_text: list[str] = extract('sample.pdf')
+    extract_text: list[str] = extract('sample-12.pdf')
     counter: Counter = count_word(extract_text)
+    print(extract_text)
     output = (
         f"Total Characters: {sum(len(word) for word in extract_text)}\n"
         f"Total Words: {sum(counter.values())}\n\n"

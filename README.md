@@ -1,2 +1,2 @@
-# 30 Python Projects to Build, Including Telegram & Discord Bots
+# 25 Python Projects to Build, Including Telegram & Discord Bots
 
