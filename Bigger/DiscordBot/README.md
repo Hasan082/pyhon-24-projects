@@ -39,7 +39,7 @@ pip install discord.py python-dotenv
    Once you have the necessary files set up, you can start the bot by running the Python script:
 
    ```bash
-   python bot.py
+   python main.py
    ```
 
    The bot should now be online and ready to respond to messages in your server.
