@@ -15,9 +15,7 @@
                 <h2>{{ player|upper }}</h2>
                 <div class="hand">
                     {% for card in hand %}
-                        <div class="single-cartd">
-                            <img src="{{ card.image }}" alt="Card" class="card">
-                        </div>
+                        <img src="{{ card.image }}" alt="Card" class="card">
                     {% endfor %}
                 </div>
             </div>
