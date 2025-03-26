@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Card Game</h1>
+
+    <div class="container">
+        {% for player, hand in players.items() %}
+            <div class="player">
+                <h2>{{ player|upper }}</h2>
+                <div class="hand">
+                    {% for card in hand %}
+                        <img src="{{ card.image }}" alt="Card" class="card">
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

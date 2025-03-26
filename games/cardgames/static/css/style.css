@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.player {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 600px;
+}
+
+.hand {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.card {
+    width: 13.5%;
+    height: auto;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+}
