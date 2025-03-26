@@ -28,7 +28,7 @@ def index():
             temp = {'image': card_images[card]}
             players_cards.append(temp)
         players[f"player {i + 1}"] = players_cards
-    print(players)
+
     return render_template("index.html", players=players)
 
 
