@@ -18,10 +18,12 @@ def index():
     deck = [f"{rank} of {suit}" for suit in suits for rank in ranks]
     shuffle(deck)
     hands = [deck[i:i + 13] for i in range(0, 52, 13)]
+
     players = {
         f"player {i + 1}": [{'image': card_images[card]} for card in hand]
         for i, hand in enumerate(hands)
     }
+
     return render_template("index.html", players=players)
 
 
